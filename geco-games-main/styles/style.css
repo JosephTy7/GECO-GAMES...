@@ -1,0 +1,391 @@
+body {
+    border: none;
+    margin: none;
+    overflow-x: hidden;
+}
+
+/*-------------------Globle---------------------*/
+ul li {
+    list-style: none;
+}
+a{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+/*-------------------End-----------------------------*/
+/*-------------------Nav-----------------------------*/
+.nav-bar{
+    display: block;
+}
+.nav-bar .content ul {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(241, 241, 241, 0.247);
+    height: 2.2rem;
+    margin: 0rem;
+    padding: 2rem 2rem;
+}
+.nav-bar .content ul a:hover{
+    color: #2f894d;
+}
+.nav-bar .content ul .subs{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-bar .content ul .subs li{
+    display: flex;
+    justify-content: space-between;
+    margin: 0rem 2rem;
+}
+
+.nav-bar .content ul .user{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-bar .content ul .user .line{
+    border: 1px solid black;
+    height: 1.5rem;
+}
+.nav-bar .content ul .user li{
+    margin: 0rem 1rem;
+}
+/*-------------------End--------------------------------*/
+/*-------------------SlideShow--------------------------*/
+.slide-show .container{
+    position: relative;
+}
+.slide-show .container .my-slide {
+    display: none;
+}
+.slide-show .container .my-slide img {
+    height: 100vh;
+    width: 100%;
+}
+.slide-show .container .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 0rem 1rem;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.slide-show .container .prev {
+    rotate: 180deg;
+}
+.slide-show .container .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.slide-show .container .prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0);
+}
+.slide-show .container .caption-text {
+    color: #f2f2f2;
+    font-size: 18px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+}
+
+.slide-show .container .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/*-------------------End--------------------------------*/
+/*-------------------Popular----------------------------*/
+.popular-games {
+    display: block;
+    text-align: center;
+}
+.popular-games .games{
+    display: flex;
+    justify-content: center
+}
+.popular-games .games{
+    display: flex;
+    justify-content: center
+}
+.popular-games .games .card{
+    margin: 0rem 2rem;
+    position: relative;
+    bottom: 8rem;
+}
+.popular-games .games .card img{
+    width: 150px;
+    height: 192px;
+    z-index: 1;
+}
+.popular-games .games .card img:hover{
+    cursor: pointer;
+}
+.popular-games .games .card .index{
+    transition: .5s;
+    z-index: 2;
+    position: relative;
+    left: 0;
+    right: 0;
+    height: 12rem;
+    top: 12rem;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.432);
+}
+.popular-games .games .card a{
+    color: white;
+}
+.popular-games .games .card:hover a{
+    z-index: 5;
+    color: white;
+    position: relative;
+    bottom: 10rem;
+}
+/*-------------------------End-----------------*/
+/*---------------------Square-----------------*/
+.square {
+    display: flex;
+    justify-content: center;
+}
+.square .main-content {
+    margin: 0rem .5rem;
+}
+.square .main-content img{
+    width: 100%;
+}
+.square .main-content .banner{
+    background-color: rgba(0, 0, 0, 0.699);
+    position: relative;
+    bottom: 11.25rem;
+    text-align: center;
+    height: 10rem;
+}
+
+.square .main-content .banner h3{
+    position: relative;
+    top: 4rem;
+    font-size: 18px;
+    font-weight: bold;
+    color: #2f894d;
+    margin: 1rem 2rem;
+}
+.square .main-content .banner a{
+    position: relative;
+    top: 4rem;
+    font-size: 18px;font-weight: bold;
+    color: #2f894d;
+    margin: 1rem 2rem;
+}
+.square .main-content .banner a:hover{
+    color: #031e4d;
+}
+.square .side-content .top{
+    display: grid;
+    grid-template-columns: 170px 170px;
+    justify-content: center;
+}
+.square .side-content .top .card {
+    margin: .5rem 1rem;
+    height: 260px;
+    width: 160px;
+}
+.square .side-content .top .card .bottom{
+    margin: 2rem 1rem;
+}
+.square .side-content .top .card img{
+    margin: 0rem 1rem;
+}
+.square .side-content .card h4{
+    text-align: center;
+    position: relative;
+    bottom: 8rem;
+    color: #2f894d;
+    border-radius: 10px;
+    width: 80%;
+    height: 1.5rem;
+    left: 1rem;
+    background-color: rgba(0, 0, 0, 0.774);
+}
+/*------------------------End---------------*/
+/*-------------------Adventure-------------*/
+.adventure .content{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 6rem;
+    right: 0;
+}
+.adventure .content .single-card-text{
+    background-color: #031e4d;
+    width: 100%;
+    height: 370px;
+    color: white;
+    text-align: center;
+}
+.adventure .content .single-card-text .card{
+    position: relative;
+    top: 10rem;
+}
+.adventure .content .side .single-card{
+   width: 100%;
+}
+.adventure .content .side img{
+   width: 80%;
+}
+/*-------------------End----------------------*/
+/*-------------------Ambassador----------------*/
+.ambassador{
+    width: 80%;
+    margin: 10rem 0rem;
+}
+.ambassador .title h2{
+   text-align: center;
+   position: relative;
+   left: 8rem;
+   font-size: 28px;
+   font-weight: bold;
+}
+.ambassador .content{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.ambassador .content .card {
+    text-align: center;
+    margin-right: .5rem;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 3px 3px 3px 3px rgb(100, 100, 100);
+}
+.ambassador .content .card img{
+    width: 342px;
+    height: 230px;
+}
+/*---------------End----------------------*/
+/*---------------Count--------------------*/
+.count-down{
+    display: block;
+    justify-content: center;
+    position: relative;
+    left: 6rem;
+}
+.count-down h2{
+    font-weight: bold;
+    font-size: 2rem;
+}
+.count-down .container{
+    width: 85%;
+    display: flex;
+    justify-content: center;
+}
+.count-down .container .image img{
+    width: 100%;
+}
+.count-down .container .clock{
+   width: 200%;
+   text-align: center;
+   height: 377px;
+   background-color: #031e4d;
+   color: white;
+   font-weight: bold;
+}
+.count-down .container .clock .time{
+   position: relative;
+   top: 5rem;
+   align-items: center;
+}
+.count-down .container .clock .time .stamp{
+    align-items: center;
+    border: 1px solid #2f894d;
+    width: 50%;
+    position: relative;
+    left: 5.5rem;
+}
+
+.count-down .container .clock .time .span{
+   color: white;
+}
+/*-------------------End--------------------------------*/
+/*-------------------Footer-----------------------------*/
+footer {
+    margin-top: 4rem;
+}
+footer .container .columns {
+    display: grid;
+    grid-template-columns: 350px 350px 350px 350px;
+}
+footer .container .col .geco .address ul{
+    position: relative;
+    right: 2rem;
+}
+footer .container .col .tools ul{
+    position: relative;
+    right: 2rem;
+    bottom: 1rem;
+}
+footer .container .col .tools ul li a{
+    font-size: 15px;
+}
+footer .container .col .tools ul li a:hover{
+    color: #2f894d;
+}
+footer .container .col .developer-community{
+    position: relative;
+    bottom: 2rem;
+}
+footer .container .col .developer-community ul{
+    position: relative;
+    right: 2rem;
+    bottom: 1rem;
+}
+footer .container .col .developer-community ul li a{
+    font-size: 15px;
+}
+footer .container .col .developer-community ul li a:hover{
+    color: #2f894d;
+}
+footer .container .col .support ul{
+    position: relative;
+    right: 2rem;
+}
+footer .container .col .support ul li a{
+    font-size: 15px;
+}
+footer .container .col .support ul li a:hover{
+    color: #2f894d;
+}
+footer .container .col .contact-us .socials ul {
+    display: flex;
+}
+footer .container .col .contact-us .socials ul li {
+    position: relative;
+    right: 4rem;
+    bottom: 1rem;
+    margin: 0rem .5rem;
+}
+footer .container .col .contact-us .get-in-touch ul li {
+    position: relative;
+    right: 8rem;
+    bottom: 1rem;
+    margin: .5rem .5rem;
+}
+footer .container .col .contact-us .get-in-touch ul li a:hover{
+    color: #2f894d;
+}
+footer .copyrights{
+    text-align: center;
+}
