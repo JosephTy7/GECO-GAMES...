@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gaming Support Page</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #afbbb3c7;
+      color: #0e0b0b;
+    }
+    
+    header {
+      background-color: #2f894d;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    h1 {
+      font-size: 36px;
+      margin: 0;
+      color: #ffffff;
+      text-shadow: 2px 2px #000000;
+    }
+    
+    .search-container {
+      text-align: center;
+      margin: 20px 0;
+    }
+    
+    .search-container input[type=text] {
+      padding: 10px;
+      width: 400px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    
+    .search-container input[type=submit] {
+      padding: 10px 20px;
+      background-color: #2f894d;
+      color: #ffffff;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    
+    section {
+      background-color: #ffffff;
+      padding: 20px;
+      margin: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    footer {
+      background-color: #2f894d;
+      padding: 10px;
+      text-align: center;
+      color: #ffffff;
+      font-size: 12px;
+    }
+    
+    .game-image {
+      display: block;
+      margin: 20px auto;
+      max-width: 400px;
+      height: auto;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    .highlight {
+      color: #820e13;
+      font-weight: bold;
+    }
+    
+    .support-card {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .support-card img {
+      max-width: 200px;
+      height: auto;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      margin: 20px;
+    }
+    
+    .support-card p {
+      flex-basis: 50%;
+      font-size: 18px;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Gaming Support Page</h1>
+  </header>
+  
+  <div class="search-container">
+    <input type="text" id="search-input" placeholder="Search for a question or problem...">
+    <input type="submit" value="Search" onclick="search()">
+  </div>
+  
+  <section>
+    <h2>Frequently Asked Questions</h2>
+    <div id="search-results"></div>
+    <p>If you couldn't find the answer to your question, please feel free to contact us for further assistance.</p>
+    <p>ou can reach us through email at <a href="mwambaj2002@gmail.com">GECO_Games@gmail.com</a> or by phone at 1234567890.</p></p>
+    <p>Our support team is available 24/7 to help you with any issues or inquiries you may have. Whether it's troubleshooting technical problems, providing game recommendations, or answering general gaming questions, we are here to assist you.</p>
+    <p>Additionally, you can visit our <a href="FAQ.html">FAQ</a> page to find answers to commonly asked questions. Our FAQ section covers various topics, including account management, gameplay instructions, and troubleshooting steps for common game-related issues.</p>
+    <p>For a more personalized support experience, please provide us with detailed information about your question or problem when contacting us. This will help us better understand your needs and provide you with the most effective assistance.</p>
+    <p>Thank you for choosing our gaming support services. We strive to deliver the best support experience and ensure your gaming journey is enjoyable and hassle-free.</p>
+  </section>
+  
+  <div class="support-card">
+    <img src="/assets/slides/10158.jpg" alt="Support Image 1" style="max-width: 500px;">
+    <p>Game with confidence, knowing that our support is your ultimate ally in the quest for gaming greatness.</p>
+  </div>
+  
+  <div class="support-card">
+    <p>Experience gaming support at its finest, where we're committed to turning your gaming dreams into reality.</p>
+    <img src="/assets/popular/mk.png" alt="Support Image 2" style="max-width: 500px;">
+  </div> 
+  <footer>
+    &copy; 2023 Gaming Support Page. All rights reserved.
+  </footer>
+  
+  <script>
+    function search() {
+      var searchInput = document.getElementById("search-input").value;
+      var searchResults = document.getElementById("search-results");
+      // Perform search and display results here
+      // Replace the following code with your own logic
+      
+      searchResults.innerHTML = "<p>No results found.</p>";
+    }
+  </script>
+</body>
+</html>
